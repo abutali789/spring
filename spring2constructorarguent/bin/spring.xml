@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="u1" class="spring2.controller.UserDetails" lazy-init="true">
+		<property name="name" value="khanabu"></property>
+
+	</bean>
+
+	<bean id="u2" class="spring2.controller.UserDetails" lazy-init="true">
+	
+	<constructor-arg>
+	
+	<value>khan</value>
+	
+	</constructor-arg>
+	<constructor-arg>
+		<value>25</value>
+				
+	</constructor-arg>
+	
+	
+	
+</bean>
+
+
+</beans>
